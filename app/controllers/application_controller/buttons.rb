@@ -363,6 +363,10 @@ module ApplicationController::Buttons
       api_collection_name = "generic_objects"
       cancel_endpoint = "/generic_object/show_list"
       force_old_dialog_use = false
+    when /Host/
+      api_collection_name = "hosts"
+      cancel_endpoint = "/host"
+      force_old_dialog_use = false
     else
       force_old_dialog_use = true
     end
